@@ -13,14 +13,14 @@ import {
 	Spinner,
 } from "@shopify/polaris"
 
-const EXTERNAL_API_URL = "https://qa1.digabit.com/api/ext/authorization/widget/token/v1"
-const API_KEY = "Basic RFJBR09URUM6ZGNjZjFkZjAtMDA3MS00MGRkLWI0NGEtZGI5YmYwMDA3MGQ1"
+const EXTERNAL_API_URL = "https://documoto.digabit.com/api/ext/authorization/widget/token/v1"
+const API_KEY = "Basic SUVDLU1PREVMOjk3ODA0Y2FiLWZlMmItNGQxMS1hMTJhLWY4MDIzNmVjMTc4NA=="
 
 export const loader = async () => {
 	const requestOptions = {
 		method: 'POST',
 		headers: {'Content-Type': 'application/json', 'Authorization': API_KEY},
-		body: JSON.stringify({bindToElementById: 'documoto-container', widgetType: 'media', mediaIdentifier: 'GT_Parts_Book_20-22', documotoDomain: 'https://qa1.digabit.com', locale: 'en-US', enablePartTags: true, enablePartComments: true})
+		body: JSON.stringify({bindToElementById: 'documoto-container', widgetType: 'media', mediaIdentifier: '123442_936336', documotoDomain: 'https://documoto.digabit.com', locale: 'en-US', enablePartTags: true, enablePartComments: true})
 	};
 
 	const response = await fetch(EXTERNAL_API_URL, requestOptions)
@@ -59,7 +59,6 @@ export default function ExternalProducts() {
 					<Button
   accessibilityLabel="Documoto Widget"
   url={"/test.html?accessToken=" + config.accessToken + "&refreshToken=" + config.refreshToken + "&accessTokenExpiration=" + config.accessTokenExpiration + "&refreshTokenExpiration=" + config.refreshTokenExpiration}
-  external
   target="_blank"
 >
   Open Widget
