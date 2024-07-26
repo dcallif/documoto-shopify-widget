@@ -13,17 +13,16 @@ import {
 	Spinner,
 } from "@shopify/polaris"
 
-const EXTERNAL_API_URL = "https://integration.digabit.com/api/ext/authorization/widget/token/v1"
-const API_KEY = "Basic Q0FMTElGVEVTVDplODdmZTBjYy02OWJmLTRjMDMtOTljMy1hMTNiYTFjMzIzMjk="
+const EXTERNAL_API_URL = "https://qa1.digabit.com/api/ext/authorization/widget/token/v1"
+const API_KEY = "Basic RFJBR09URUM6ZGNjZjFkZjAtMDA3MS00MGRkLWI0NGEtZGI5YmYwMDA3MGQ1"
 
 export const loader = async () => {
 	const requestOptions = {
-		method: "POST",
-		headers: {"Content-Type": "application/json", "Authorization": API_KEY},
-		body: JSON.stringify({bindToElementById: "documoto-container", widgetType: "media", mediaIdentifier: "LE-Test_12543", documotoDomain: "https://integration.digabit.com", locale: "en-US", enablePartTags: true, enablePartComments: true})
+		method: 'POST',
+		headers: {'Content-Type': 'application/json', 'Authorization': API_KEY},
+		body: JSON.stringify({bindToElementById: 'documoto-container', widgetType: 'media', mediaIdentifier: 'GT_Parts_Book_20-22', documotoDomain: 'https://qa1.digabit.com', locale: 'en-US', enablePartTags: true, enablePartComments: true})
 	};
 
-	console.log(requestOptions)
 	const response = await fetch(EXTERNAL_API_URL, requestOptions)
 	const data = await response.json()
 	console.log(data)
@@ -34,8 +33,6 @@ export const loader = async () => {
 export default function ExternalProducts() {
 	const config = useLoaderData()
 	const fetcher = useFetcher()
-
-	// Widget.init(json(config))
 
 	const rows = [
 		[config.bindToElementById, config.widgetType, config.mediaIdentifier, config.documotoDomain, config.locale, "true", "true", config.accessToken, config.refreshToken]
