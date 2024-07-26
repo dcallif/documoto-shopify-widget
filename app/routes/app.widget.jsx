@@ -18,9 +18,9 @@ const API_KEY = "Basic Q0FMTElGVEVTVDplODdmZTBjYy02OWJmLTRjMDMtOTljMy1hMTNiYTFjM
 
 export const loader = async () => {
 	const requestOptions = {
-		method: 'POST',
-		headers: {'Content-Type': 'application/json', 'Authorization': API_KEY},
-		body: JSON.stringify({bindToElementById: 'documoto-container', widgetType: 'media', mediaIdentifier: 'LE-Test_12543', documotoDomain: 'https://integration.digabit.com', locale: 'en-US', enablePartTags: true, enablePartComments: true})
+		method: "POST",
+		headers: {"Content-Type": "application/json", "Authorization": API_KEY},
+		body: JSON.stringify({bindToElementById: "documoto-container", widgetType: "media", mediaIdentifier: "LE-Test_12543", documotoDomain: "https://integration.digabit.com", locale: "en-US", enablePartTags: true, enablePartComments: true})
 	};
 
 	console.log(requestOptions)
