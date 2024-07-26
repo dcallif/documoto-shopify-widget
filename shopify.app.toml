@@ -3,7 +3,7 @@
 client_id = "306b4253432c9505605bbc4170aef728"
 name = "documoto-widget"
 handle = "documoto-widget"
-application_url = "https://jets-tagged-shield-cancellation.trycloudflare.com"
+application_url = "https://documoto-shopify-widget.onrender.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://jets-tagged-shield-cancellation.trycloudflare.com/auth/callback",
-  "https://jets-tagged-shield-cancellation.trycloudflare.com/auth/shopify/callback",
-  "https://jets-tagged-shield-cancellation.trycloudflare.com/api/auth/callback"
+  "https://documoto-shopify-widget.onrender.com/auth/callback",
+  "https://documoto-shopify-widget.onrender.com/auth/shopify/callback",
+  "https://documoto-shopify-widget.onrender.com/api/auth/callback"
 ]
 
 [webhooks]

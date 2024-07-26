@@ -23,6 +23,7 @@ export const loader = async () => {
 		body: JSON.stringify({bindToElementById: 'documoto-container', widgetType: 'media', mediaIdentifier: 'LE-Test_12543', documotoDomain: 'https://integration.digabit.com', locale: 'en-US', enablePartTags: true, enablePartComments: true})
 	};
 
+	console.log(requestOptions)
 	const response = await fetch(EXTERNAL_API_URL, requestOptions)
 	const data = await response.json()
 	console.log(data)
