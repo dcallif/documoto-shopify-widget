@@ -1,5 +1,5 @@
 <h1 align="center">Book Widget Example</h1>
-<h3 align="center">Widget for Media Identifier: GT_Parts_Book_20-22</h3>
+<h3 align="center">Widget for Media Identifier: Hustler FasTrak SDX Parts Manual - 936146US - HTFSXS048KOHZT730U</h3>
 <button id="button-cart">
     Open Book Widget With Cart
 </button>
@@ -9,7 +9,7 @@
 <div id="documoto-container"
      style="width: 100%; height: 80vh;"/>
 
-<script src="https://integration.digabit.com/ui/DocumotoWidget.js"></script>
+<script src="https://documoto.digabit.com/ui/DocumotoWidget.js"></script>
 <script>
     const accessToken = GetURLParameter('accessToken')
     const refreshToken = GetURLParameter('refreshToken')
@@ -35,8 +35,6 @@ async function initWidget() {
     button_with_cart.remove()
 
     const config = {'bindToElementById': 'documoto-container', 'widgetType': 'media', 'mediaIdentifier': '123442_936336', 'documotoDomain': 'https://documoto.digabit.com', 'locale': 'en-US', 'enablePartTags': true, 'enablePartComments': true, 'theme': {'brand_primary': '#d4dfe7'}, 'accessToken': accessToken, 'refreshToken': refreshToken, 'accessTokenExpiration': accessTokenExpiration, 'refreshTokenExpiration': refreshTokenExpiration}
-
-    console.log(config)
 
     // Call init method on Widget object with config to initialize
     // DocumotoWidget.js brings Widget into scope

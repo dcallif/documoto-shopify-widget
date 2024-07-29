@@ -3,7 +3,7 @@
 client_id = "306b4253432c9505605bbc4170aef728"
 name = "documoto-widget"
 handle = "documoto-widget"
-application_url = "https://sleeping-loaded-structural-spears.trycloudflare.com"
+application_url = "https://dubai-aurora-composite-settlement.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://sleeping-loaded-structural-spears.trycloudflare.com/auth/callback",
-  "https://sleeping-loaded-structural-spears.trycloudflare.com/auth/shopify/callback",
-  "https://sleeping-loaded-structural-spears.trycloudflare.com/api/auth/callback"
+  "https://dubai-aurora-composite-settlement.trycloudflare.com/auth/callback",
+  "https://dubai-aurora-composite-settlement.trycloudflare.com/auth/shopify/callback",
+  "https://dubai-aurora-composite-settlement.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
