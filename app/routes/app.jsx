@@ -26,6 +26,7 @@ export default function App() {
         <Link to="/app/external-products">Externally Loaded Products</Link>
         <Link to="/app/widget">Documoto Widget</Link>
         <Link to="/app/widget2">Documoto Widget - New</Link>
+        <Link to="/app/widget3">Documoto Widget - Final</Link>
       </NavMenu>
       <Outlet />
     </AppProvider>
